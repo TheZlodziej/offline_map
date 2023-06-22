@@ -21,7 +21,7 @@ export default defineComponent({
       { lat: 32.941711, lng: -106.975440 },
       {
         icon: L.icon({
-          iconUrl: './icons/pcc.svg',
+          iconUrl: '/icons/pcc.svg',
           iconSize: [30, 30],
           iconAnchor: [15, 30],
           popupAnchor: [0, -30],
@@ -37,7 +37,7 @@ export default defineComponent({
       { lat: 32.941711, lng: -106.975440 },
       {
         icon: L.icon({
-          iconUrl: './icons/telemetry.svg',
+          iconUrl: "/icons/telemetry.svg",
           iconSize: [30, 30],
           iconAnchor: [15, 30],
           popupAnchor: [0, -30],
@@ -53,7 +53,7 @@ export default defineComponent({
       { lat: 32.941711, lng: -106.975440 },
       {
         icon: L.icon({
-          iconUrl: './icons/tracker_av.svg',
+          iconUrl: '/icons/tracker_av.svg',
           iconSize: [30, 30],
           iconAnchor: [15, 30],
           popupAnchor: [0, -30],
@@ -69,7 +69,7 @@ export default defineComponent({
       { lat: 32.941711, lng: -106.975440 },
       {
         icon: L.icon({
-          iconUrl: './icons/tracker_nc.svg',
+          iconUrl: "/icons/tracker_nc.svg",
           iconSize: [30, 30],
           iconAnchor: [15, 30],
           popupAnchor: [0, -30],
@@ -85,7 +85,7 @@ export default defineComponent({
       { lat: 32.941711, lng: -106.975440 },
       {
         icon: L.icon({
-          iconUrl: './icons/tracker_cots.svg',
+          iconUrl: "/icons/tracker_cots.svg",
           iconSize: [30, 30],
           iconAnchor: [15, 30],
           popupAnchor: [0, -30],
@@ -128,13 +128,14 @@ export default defineComponent({
 
     return { markers };
   }
+
+
 });
 </script>
 
 <template>
   <div class="container">
-    <OfflineMap :markers="markers" area_path="./areas/spaceport" :zoom="13"
-      :center="{ lat: 33.193481, lng: -107.221710 }">
+    <OfflineMap :markers="markers" area_path="/areas/spaceport" :zoom="13" :center="{ lat: 33.193481, lng: -107.221710 }">
     </OfflineMap>
   </div>
 </template>
